@@ -5,7 +5,7 @@ export abstract class Manger {
     static feedAnimal(animal: Animal) {
         animal.eatsFood()
         animal.starvationObservable.subscribe(() => {
-            if(ConfigurationStore.MANGER_OUTPUT_ACTIVE)
+            if(ConfigurationStore.MANGER_LOG_ACTIVE)
                 console.log(`${animal.name} is starving`)
             
             animal.eatsFood()

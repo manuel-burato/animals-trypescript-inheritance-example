@@ -16,7 +16,7 @@ export abstract class Animal {
     public eatsFood() {
         this._ate = true
         
-        if(ConfigurationStore.MANGER_OUTPUT_ACTIVE)
+        if(ConfigurationStore.MANGER_LOG_ACTIVE)
             console.log(`<${this.constructor.name}>`, this.name, "is eating")
 
         setTimeout(() => {

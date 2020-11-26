@@ -25,7 +25,7 @@ export class House {
     }
 
     private logEntrance(animal: AnimalWithSpeed) {
-        if(ConfigurationStore.MOVEMENT_OUTPUT_ACTIVE)
+        if(ConfigurationStore.MOVEMENT_LOG_ACTIVE)
             console.log(`<${animal.constructor.name}>`, (<any>animal)['name'], `is moving into house at ${animal.currentSpeed} speed`)
         
         animal.stop()

@@ -1,4 +1,4 @@
 export class ConfigurationStore {
-    static MANGER_OUTPUT_ACTIVE: boolean = false
-    static MOVEMENT_OUTPUT_ACTIVE: boolean = true
+    static MANGER_LOG_ACTIVE: boolean = false
+    static MOVEMENT_LOG_ACTIVE: boolean = true
 }
